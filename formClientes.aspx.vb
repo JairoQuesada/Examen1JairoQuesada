@@ -50,7 +50,7 @@ Public Class formClientes
                 .Nombre = row.Cells(2).Text,
                 .Apellidos = row.Cells(3).Text,
                 .Email = row.Cells(4).Text,
-                .Telefono = row.Cells(4).Text
+                .Telefono = row.Cells(5).Text
             }
             IDClientei.Value = row.Cells(1).Text
 

@@ -52,7 +52,7 @@ Public Class DatabaseHelper
     Friend Function UpdateCliente(id As String, cliente As Cliente) As String
         Try
             Dim query As String = "UPDATE Clientes SET Nombre = @Nombre,
-                                    Apellidos = @Apellidos, Email = @Email, Telefono = @Telefono WHERE EmpleadoID = @Id"
+                                    Apellidos = @Apellidos, Email = @Email, Telefono = @Telefono WHERE ClienteID = @Id"
             Dim parameters As New List(Of SqlParameter) From {
                 New SqlParameter("@Id", id),
                 New SqlParameter("@Nombre", cliente.Nombre),
