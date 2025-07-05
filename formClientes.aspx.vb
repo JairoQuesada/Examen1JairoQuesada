@@ -72,7 +72,9 @@ Public Class formClientes
         GvClientes.DataBind()
     End Sub
 
-
-
-
+    Protected Sub btnCancelar_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click
+        LimpiarFormulario()
+        IDClientei.Value = ""
+        LblMensaje.Text = ""
+    End Sub
 End Class

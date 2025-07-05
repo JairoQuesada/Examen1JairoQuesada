@@ -24,9 +24,10 @@
             <asp:TextBox ID="TxtTelefono" runat="server" CssClass="form-control" MaxLength="20" TextMode="Number" required="required"></asp:TextBox>
         </div>
 
-         <div class="form-group">
-             <asp:Button ID="btnGuardar" CssClass="btn btn-primary" runat="server" Text="Guardar" OnClick="btnGuardar_Click" />
-         </div>
+         <div class="form-group mb-3">
+                <asp:Button ID="btnGuardar" CssClass="btn btn-primary" runat="server" Text="Guardar" OnClick="btnGuardar_Click" />
+                <asp:Button ID="btnCancelar" CssClass="btn btn-danger ms-2" runat="server" Text="Cancelar" OnClick="btnCancelar_Click" CausesValidation="False" UseSubmitBehavior="false"/>
+        </div>
 
          <asp:Label ID="LblMensaje" runat="server" Text=""></asp:Label>
      </div>
