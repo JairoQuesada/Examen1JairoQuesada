@@ -11,16 +11,16 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Clientes
+Partial Public Class formClientes
 
     '''<summary>
-    '''Control IdCliente.
+    '''Control IDClientei.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents IdCliente As Global.System.Web.UI.WebControls.HiddenField
+    Protected WithEvents IDClientei As Global.System.Web.UI.WebControls.HiddenField
 
     '''<summary>
     '''Control TxtNombre.

@@ -49,7 +49,7 @@ Public Class DatabaseHelper
         End Try
     End Function
 
-    Friend Function UpdateEmpleado(id As String, cliente As Cliente) As String
+    Friend Function UpdateCliente(id As String, cliente As Cliente) As String
         Try
             Dim query As String = "UPDATE Clientes SET Nombre = @Nombre,
                                     Apellidos = @Apellidos, Email = @Email, Telefono = @Telefono WHERE EmpleadoID = @Id"

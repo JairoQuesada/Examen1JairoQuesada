@@ -18,6 +18,14 @@
         _Telefono = Telefono
     End Sub
 
+    Public Sub New()
+        _ClienteId = ClienteId
+        _Nombre = Nombre
+        _Apellidos = Apellidos
+        _Email = Email
+        _Telefono = Telefono
+    End Sub
+
     Public Property ClienteId As Integer
         Get
             Return _ClienteId

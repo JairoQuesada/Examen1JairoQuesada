@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="formClientes.aspx.vb" Inherits="Examen1JairoQuesada.Clientes" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="formClientes.aspx.vb" Inherits="Examen1JairoQuesada.formClientes" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:HiddenField ID="IdCliente" runat="server" />
+    <asp:HiddenField ID="IDClientei" runat="server" />
      <div class="row mb-3">
      <div class="col-md-4">
 
