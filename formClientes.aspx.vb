@@ -7,6 +7,16 @@ Public Class formClientes
     End Sub
 
     Protected Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
+        'Validaciones en el servidor
+        If Not TxtEmail.Text.Contains("@") OrElse Not TxtEmail.Text.Contains(".") Then
+            LblMensaje.Text = "El correo electronico no es valido."
+            Return
+        End If
+
+        If TxtTelefono.Text.Length <> 8 OrElse Not IsNumeric(TxtTelefono.Text) Then
+            LblMensaje.Text = "El telefono debe tener 8 digitos numericos."
+            Return
+        End If
         If IDClientei.Value.IsNullOrWhiteSpace Then
             'CREAR
             Dim cliente As New Cliente() With {
